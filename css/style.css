@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+}
+
+/* Navbar */
+header.navbar-container {
+  max-width: 3000px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1.5rem;
+  z-index: 999;
+  text-align: center;
+  background-color: #3f0071;
+}
+
+header.navbar-container .logo span {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+header.navbar-container .logo span:hover{
+  color: white;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+header.navbar-container .logo img {
+  width: 150px;
+  padding-left: -20px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.05rem;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  margin: 100px auto;
+  font-weight: 200;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+header.navbar-container .nav-list li a:hover::after {
+  transform: scaleX(1);
+}
+/* navbar */
+
+/* Main */
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: block;
+  align-items: center;
+}
+
+
+/* Content */
+main .konten {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 9vh;
+}
+
+main .konten .content-description {
+  flex: 1 1;
+  width: 900px;
+}
+
+main .konten .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+  color: black;
+}
+
+main .konten .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: black;
+}
+
+main .konten .content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #3f0071;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .konten .content-description button:hover {
+  border: 3px solid #3f0071;
+  color: #3f0071;
+  background-color: transparent;
+}
+
+main .konten .content-image {
+  flex: 1;
+  display: flex;
+}
+
+main .konten .content-image img {
+  margin: auto;
+  min-width: 350px;
+  width: 300px;
+  /* padding-left: -20vh;
+  margin-left: 200px; */
+}
+/* Content */
+
+/* Content-2 */
+main .more-about-me {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 10vh;
+  margin-top: 7vh;
+}
+
+main .more-about-me .foto-kedua {
+  flex: 1;
+  display: flex;
+}
+main .more-about-me .foto-kedua img {
+  margin: auto;
+  min-width: 250px;
+  width: 50px;
+  padding-left: -20vh;
+  margin-left: 200px;
+}
+main .more-about-me .edu-and-exp {
+  /* width: 400px; */
+  height: 500px;
+  display: block;
+}
+main .more-about-me .edu-and-exp ul li {
+  max-width: 500px;
+}
+
+main .golden-gate .sch-year {
+  display: inline;
+  position: relative;
+}
+main .golden-gate .sch-year a {
+  display: block;
+  text-decoration: none;
+  color:#3f0071
+}
+main .unhas .univ-year a {
+  display: block;
+  text-decoration: none;
+}
+main .more-about-me .edu-and-exp .golden-gate img {
+  display: inline;
+  width: 125px;
+  margin-left: 375px;
+  margin-top: -3000px;
+  margin-bottom: 90px;
+}
+main .more-about-me .edu-and-exp .unhas img {
+  display: inline-block;
+  width: 125px;
+  margin-left: 365px;
+  margin-top: -200px;
+}
+
+/* all-projects */
+main .all-projects {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 9vh;
+  padding-left: 20px;
+}
+
+main .all-projects .foto-kedua {
+  flex: 1;
+  display: flex;
+}
+main .all-projects .project {
+  display: flex;
+  padding-right: 20px;
+}
+
+main .all-projects .project .cafe-menu h1,
+main .all-projects .project .nutrition-label h1,
+main .all-projects .project .kedai-kopi h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+main .all-projects .project {
+  display: flex;
+  /* border: 1px solid gray; */
+  width: 984px;
+  padding: 5px;
+  column-gap: 35px;
+}
+main .all-projects .project img {
+  border-radius: 10px;
+  width: 200px;
+  /* height: 300px; */
+}
+main .all-projects .project button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1vw;
+  width: 100px;
+  margin-top: 10px;
+  background-color: #3f0071;
+  color: white;
+  font-weight: 700;
+}
+
+main .all-projects .project .cafe-menu {
+  border-radius: 10px;
+  border: 2px solid #3f0071;
+  padding: 25px;
+  width: 500px;
+}
+main .all-projects .project .cafe-menu img{
+  position: relative;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+main .all-projects .project .nutrition-label {
+  border-radius: 10px;
+  border: 2px solid #3f0071;
+  padding: 25px;
+  width: 500px;
+}
+main .all-projects .project .kedai-kopi {
+  border-radius: 10px;
+  border: 2px solid #3f0071;
+  padding: 25px;
+  width: 500px;
+}
+
+/* Skills */
+main .content-skills {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 9vh;
+  padding-left: 20px;
+  padding-top: 1px;
+}
+main .content-skills .skills {
+  display: flex;
+  column-gap: 20px;
+}
+main .content-skills .hard-skills {
+  border: 2px solid #3f0071;
+  padding: 1rem;
+  flex: 1;
+  border-radius: 2em;
+  /* text-align: center; */
+}
+
+main .content-skills .hard-skills .all-hard-skills {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  /* gap: 2.5rem; */
+  column-gap: 1em;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+main .content-skills .soft-skills {
+  border: 2px solid #3f0071;
+  padding: 1rem;
+  flex: 1;
+  border-radius: 2em;
+}
+main .content-skills .soft-skills .all-soft-skills {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 1em;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Contact me */
+main .contact-me {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 11vh;
+  margin-top: 3vh;
+}
+
+main .contact-me .content-description .find-me{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 1vw;
+}
+main .contact-me .content-description .find-me .location,
+main .contact-me .content-description .find-me .phone,
+main .contact-me .content-description .find-me .mail
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .contact-me .content-description .find-me .location span, main .contact-me .content-description .find-me .phone span, main .contact-me .content-description .find-me .mail span{
+  margin-left: 15px;
+}
+
+
+/* Aside */
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 12px;
+  background-color: #3f0071;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #3f0071;
+  text-align: center;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+}
